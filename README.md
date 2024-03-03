@@ -21,3 +21,4 @@ in this all the crud operations url is written
 
 
 ### App is Deployed in the Netlfify 
+      https://book-inventoryy.netlify.app/
