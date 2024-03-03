@@ -13,7 +13,7 @@ function Add() {
   const addBook = async () => {                      //add book to database logic
     try {
         if (!title || !author || !publication || !description) {
-            alert("Please fill in all fields");
+            alert("All Field Are Required !!");
             return;
         }
       const newBook = {
