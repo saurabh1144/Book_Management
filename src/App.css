@@ -12,20 +12,21 @@
 
 .card{
     display: flex;
-    /* justify-content: center; */
-    /* width: 600px; */
-    /* margin-left: 400px; */
+   
 }
 
 .delete{
     cursor: pointer;
     color: red;
-    text-wrap: nowrap;
+  
 }
 .update{
     color: green;
-    text-wrap: nowrap;
+   
 }
-.view{
-    text-wrap: nowrap;
+
+
+.adds{
+    width: 600px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }

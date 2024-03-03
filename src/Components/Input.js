@@ -4,8 +4,8 @@ function Input({label,value,onChange,type}) {
   return (
     <div>
       <div>
-      <label>{label}</label>
-      <input className='form-control form-control-sm' type={type} value={value} required onChange={(e)=>onChange(e.target.value) }/>
+      <label>{label}<sup><span className='text-danger'>*</span></sup></label>
+      <input className='form-control form-control-sm mb-3' type={type} value={value}   onChange={(e)=>onChange(e.target.value) } required/>
       </div>
     </div>
   )

@@ -62,7 +62,7 @@ function Update() {
       >
         Back
       </button>
-      <div className="container my-5 updatee ">
+      <div className="container my-2 updatee ">
         <h2 className="text-center">Update</h2>
 
         <Input type="text" label="Title" value={title} onChange={setTitle} />
@@ -79,7 +79,7 @@ function Update() {
           value={description}
           onChange={setDescription}
         />
-        <button className="btn btn-primary my-4" onClick={addBook}>
+        <button className="btn btn-success my-4" onClick={addBook}>
           Update
         </button>
       </div>

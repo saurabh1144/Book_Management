@@ -12,6 +12,10 @@ function Add() {
 
   const addBook = async () => {                      //add book to database logic
     try {
+        if (!title || !author || !publication || !description) {
+            alert("Please fill in all fields");
+            return;
+        }
       const newBook = {
         title,
         author,
@@ -41,10 +45,10 @@ function Add() {
     <button className="btn btn-outline-primary btn-sm" onClick={back}> Back</button>
       <h2 className="text-center">Add Book to Inventory</h2>
       <div className="row">
-      <div className="col-4">
+      <div className="col-3">
 
       </div>
-      <div className="col-md-4">
+      <div className="col-md-4 adds p-3">
       <Input type="text" label="Title" value={title} onChange={setTitle} />
       <Input type="text" label="Author" value={author} onChange={setAuthor} />
       <Input
@@ -59,7 +63,7 @@ function Add() {
         value={description}
         onChange={setDescription}
       />
-      <button className="btn btn-primary my-4" onClick={addBook}>
+      <button className="btn btn-success my-2" onClick={addBook}>
       Add Book
       </button>
       </div>
