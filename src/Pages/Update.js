@@ -62,10 +62,14 @@ function Update() {
       >
         Back
       </button>
-      <div className="container my-2 updatee ">
+      <div className="container my-2 ">
         <h2 className="text-center">Update</h2>
+      <div className="row">
+      <div className="col-3">
 
-        <Input type="text" label="Title" value={title} onChange={setTitle} />
+      </div>
+      <div className="col-md-4 col-sm-12 updatee ">
+      <Input type="text" label="Title" value={title} onChange={setTitle} />
         <Input type="text" label="Author" value={author} onChange={setAuthor} />
         <Input
           type="text"
@@ -82,6 +86,13 @@ function Update() {
         <button className="btn btn-success my-4" onClick={addBook}>
           Update
         </button>
+      </div>
+      <div className="col-3">
+
+      </div>
+
+      </div>
+        
       </div>
     </div>
   );
