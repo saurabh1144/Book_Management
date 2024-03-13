@@ -3,7 +3,8 @@ import { Link, Outlet } from "react-router-dom";
 
 import { IoMdAdd } from "react-icons/io";
 
-function Navbar() {
+function Navbar({setSearch}) {
+ 
   return (
     <div>
     <div className="navbarr">
@@ -12,6 +13,7 @@ function Navbar() {
           <h2 className="navbar-brand" href="#">
             Book Inventory
           </h2>
+          
           <div className="add">
           <Link to="/addBook"><button className="btn btn-primary mx-5"> <IoMdAdd /> Add</button></Link> 
           </div>

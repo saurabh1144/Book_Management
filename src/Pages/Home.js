@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 function Home() {
     
   const [data, setData] = useState([]);
+ 
 
   const getBooksData = async () => {               //getting books details
     const bookData = await getBooks();
@@ -18,6 +19,7 @@ function Home() {
 
   useEffect(() => {
     getBooksData();
+   
   }, []);
 
   const deleteBook = async (id) => {                   //deleteing the selected books
@@ -28,6 +30,7 @@ function Home() {
    
     
   };
+  
 
   return (
     <div className="container scroll ">

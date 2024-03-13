@@ -56,6 +56,7 @@ function Add() {
         label="Publication Year"
         value={publication}
         onChange={setPublication}
+        
       />
       <Input
         type="text"
